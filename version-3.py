@@ -1,3 +1,6 @@
+#Add one more argument to pass the start/stop action along with instance id. 
+# If no action is passed then it should ask for the action to be performed.
+
 import boto3
 import time
 import sys

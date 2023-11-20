@@ -1,3 +1,5 @@
+#Create a python script to start and stop the EC2 instance. 
+# Hardcode the instance id in the script. The script should be triggered from your local.
 import boto3
 
 def start_ec2(instance_id):
@@ -17,7 +19,7 @@ def stop_ec2(instance_id):
         print(f"Error stopping instance {instance_id}: {e}")
 
 def main():
-    instance_id = 'i-0e13829aa840a8c17'  
+    instance_id = 'i-0ecbcfbdc38f5ed95'  
     start_ec2(instance_id)
     
     print("Waiting for a few seconds...")

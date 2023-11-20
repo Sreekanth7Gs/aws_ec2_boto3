@@ -1,3 +1,7 @@
+#Pass the instance id as an argument while running the script. 
+# If no input is passed, then the script should ask to enter EC2 instance id. The script should start or stop only that instance.
+#If there is no input then it should start or stop all the instances.
+
 import boto3 
 ec2 = boto3.client('ec2')
 try:
